@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "app oriented to expose gift api rest",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express":"4.17.1",
     "node-fetch": "2.6.0",
