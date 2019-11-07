@@ -5,12 +5,12 @@ const redis = require('redis')
 
 const REDIS_PORT = process.env.PORT || 6379;
 let REDIS_URL = process.env.REDIS_URL || `redis://127.0.0.1:${REDIS_PORT}`;
-let workQueue = new Queue('work', REDIS_URL);
+var url   = require("url").parse(process.env.REDIS_URL);
+var redis = require("redis").createClient(url.port, url.hostname);
+redis.auth(url.auth.split(":")[1]);
 
 const SIMPLE_API_URL_BASE = process.env.URL_BASE || 'https://simple.ripley.cl/api/v2/products'
 let PARTNUMBERS = fs.readFileSync('gifts_partnumber_data.txt', { 'encoding': 'utf8'});
-
-const client = redis.createClient(REDIS_PORT);
 
 exports.index =  async function(req, res, next) {
   try {
