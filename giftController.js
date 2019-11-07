@@ -1,7 +1,6 @@
 const fetch = require('node-fetch')
 const fs = require('fs')
 const lodash = require('lodash')
-const redis = require('redis')
 
 const REDIS_PORT = process.env.PORT || 6379;
 let REDIS_URL = process.env.REDIS_URL || `redis://127.0.0.1:${REDIS_PORT}`;
