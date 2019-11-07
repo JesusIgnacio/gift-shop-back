@@ -1,0 +1,19 @@
+{
+  "name": "gift-shop-back",
+  "version": "1.0.0",
+  "description": "app oriented to expose gift api rest",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusIgnacio/gift-shop-back.git"
+  },
+  "author": "jcastillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusIgnacio/gift-shop-back/issues"
+  },
+  "homepage": "https://github.com/JesusIgnacio/gift-shop-back#readme"
+}
