@@ -1,10 +1,10 @@
 const router = require('express').Router();
 
 router.get('/', function (req, res) {
-    res.json({
-        status: 0,
-        message: 'Gifts API Its Working'
-    });
+  res.json({
+    status: 0,
+    message: 'Gifts API Its Working'
+  });
 });
 
 var giftController = require('./giftController');

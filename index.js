@@ -8,5 +8,5 @@ const app = express();
 app.use('/api', apiRoutes)
 
 app.listen(PORT, () => {
-    console.log(`listening on ${PORT}`)
+  console.log(`listening on ${PORT}`)
 });
