@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "express":"4.17.1",
-    "nodemon":"1.19.4",
     "node-fetch": "2.6.0",
     "redis":"2.8.0",
-    "lodash":"4.17.15"
+    "lodash":"4.17.15",
+    "cors":"2.8.5"
+  },"devDependencies": {
+    "nodemon":"1.19.4"
   },
   "repository": {
     "type": "git",
