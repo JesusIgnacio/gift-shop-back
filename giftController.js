@@ -6,7 +6,6 @@ const REDIS_PORT = process.env.PORT || 6379;
 let REDIS_URL = process.env.REDIS_URL || `redis://127.0.0.1:${REDIS_PORT}`;
 var url   = require("url").parse(REDIS_URL);
 var redis = require("redis").createClient(url.port, url.hostname);
-redis.auth(url.auth.split(":")[1]);
 
 const SIMPLE_API_URL_BASE = process.env.URL_BASE || 'https://simple.ripley.cl/api/v2/products'
 let PARTNUMBERS = fs.readFileSync('gifts_partnumber_data.txt', { 'encoding': 'utf8'});
